@@ -1,10 +1,11 @@
 package com.tnsif.ExceptionHandling;
 
 
-import java.util.Scanner;
+
 
 // Custom Exception for Invalid PIN
 class InvalidPinException extends Exception {
+	private static final long serialVersionUID = 1L;
     public InvalidPinException(String message) {
         super(message);
     }
@@ -12,6 +13,7 @@ class InvalidPinException extends Exception {
 
 // Custom Exception for Insufficient Balance
 class InsufficientBalanceException extends Exception {
+	private static final long serialVersionUID = 1L;
     public InsufficientBalanceException(String message) {
         super(message);
     }
